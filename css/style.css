@@ -1,10 +1,25 @@
 @import url(http://fonts.googleapis.com/css?family=Neuton:400,400italic|Montserrat:400,700);
-h1 {
+#songHeader {
     font-family: 'Montserrat', sans-serif;
-    font-weight:700;
-    letter-spacing:0.05em;
+    display:inline-block;
 }
-h2 {
-     font-family: 'Neuton', serif; 
-    font-weight: 400;
+#songHeader h1 {
+    font-weight:700;
+    letter-spacing:0.05em;   
+}
+#songHeader span {
+    font-size:0.5em;
+    font-weight:400;
+    letter-spacing:0.1em;
+    color:rgba(0,0,0,0.7);
+}
+.verse {
+    font-family:"Neuton", serif;
+    font-size:1.2em;
+    letter-spacing:0.05em;
+    margin-left:2%;
+}
+.hoverWord {
+    background:rgba(34, 34, 131, 0.6);
+    cursor:pointer;
 }
