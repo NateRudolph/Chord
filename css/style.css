@@ -15,11 +15,24 @@
 }
 .verse {
     font-family:"Neuton", serif;
-    font-size:1.2em;
+    font-size:1.5em;
     letter-spacing:0.05em;
-    margin-left:2%;
+    margin:1% 2%;
 }
-.hoverWord {
+.word:hover {
     background:rgba(34, 34, 131, 0.6);
     cursor:pointer;
+}
+
+
+
+.verseTitle {
+    margin-left:-1%;
+    font-style:italic
+}
+
+.twoCol {
+-webkit-column-count: 2;
+    -moz-column-count: 2;
+        column-count: 2;
 }
