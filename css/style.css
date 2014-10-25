@@ -19,7 +19,7 @@
     letter-spacing:0.05em;
     margin-bottom:2em;
 }
-.verseTitle, .chorusTitle {
+.verse h1, .chorus h1 {
     font-size:1.3em;
     font-style:italic;
 }
