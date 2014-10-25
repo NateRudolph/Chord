@@ -26,11 +26,17 @@
 .word:hover {
     background:rgba(34, 34, 131, 0.6);
     cursor:pointer;
+    line-height:1em;
+}
+.chordWord {
+    text-transform:capitalize;
+    position:absolute;
 }
 .chord {
-    text-transform: capitalize;
+    font-family:'Monserrat',sans-serif;
+    font-weight:700;
     position:relative;
-    top:-1em; left:-20px;
+    top:-1em;
 }
 .twoCol {
     -webkit-column-count: 2;

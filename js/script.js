@@ -10,6 +10,7 @@ $( document ).ready(function(){
         $(this).html(result.join(' '));
     });
     $(".word").click(function(){
-        $(this).append("<span class='chord'>g</span>");
+        var widthOfTargetWord = ($(this).width());
+        $(this).append("<span class='chordWord'><span class='chord'>Em</span></span>");
     });
 });
