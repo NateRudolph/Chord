@@ -17,19 +17,21 @@
     font-family:"Neuton", serif;
     font-size:1.5em;
     letter-spacing:0.05em;
-    margin:1% 2%;
+    margin-bottom:2em;
 }
 .verseTitle, .chorusTitle {
-    margin-left:-1%;
-    font-style:italic
+    font-size:1.3em;
+    font-style:italic;
+}
+.verse p {
+    
 }
 .word:hover {
     background:rgba(34, 34, 131, 0.6);
     cursor:pointer;
     line-height:1em;
 }
-.chordWord {
-    text-transform:capitalize;
+.chordContainer {
     position:absolute;
 }
 .chord {
