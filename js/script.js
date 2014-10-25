@@ -14,8 +14,7 @@ $( document ).ready(function(){
         var widthOfTargetWord = ($(this).width());
         $(this).append("<span class='chordWord'><span id="+chordCounter+" class='chord'>Em</span></span>");
         var widthOfChord = $("#"+chordCounter).width();
-        alert(widthOfChord);
-        $("#"+chordCounter).css('left',-widthOfTargetWord/2-widthOfChord);
+        $("#"+chordCounter).css('left',(widthOfTargetWord/2*-1)+(widthOfChord/2*-1));
         chordCounter++;
     });
 });
