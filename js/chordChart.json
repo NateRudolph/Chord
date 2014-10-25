@@ -1,0 +1,20 @@
+{
+    "keys": [
+        {"key": "C#", "chords": ["C#","D#m","E#m","F#","G#","A#m"]},
+        {"key": "F#", "chords": ["F#","G#m","A#m","B","C#","D#m"]},
+        {"key": "B",  "chords": ["B","C#m","D#m","E","F#","G#m"]},
+        {"key": "E",  "chords": ["E","F#m","G#m","A","B","C#m"]},        
+        {"key": "A",  "chords": ["A","Bm","C#m","D","E","F#m"]},
+        {"key": "D",  "chords": ["D","Em","F#m","G","A","Bm"]},        
+        {"key": "G",  "chords": ["G","Am","Bm","C","D","Em"]},
+        {"key": "C",  "chords": ["C","D","Em","F","G","Am"]},        
+        {"key": "F",  "chords": ["F","Gm","Am","Bm","C","Dm"]},
+        {"key": "Bb", "chords": ["Bb","Cm","Dm","Eb","F","Gm"]},        
+        {"key": "Eb", "chords": ["Eb","Fm","Gm","Ab","Bb","Cm"]},
+        {"key": "Ab", "chords": ["Ab","Bbm","Cm","Db","Eb","Fm"]},        
+        {"key": "Db", "chords": ["Db","Ebm","Fm","Gb","Ab","Bbm"]},
+        {"key": "Gb", "chords": ["Gb","Abm","Bbm","Cb","Db","Ebm"]},
+        {"key": "Cb", "chords": ["Cb","Dbm","Ebm","Fb","Gb","Abm"]},
+        {"key": "chart", "chords": ["I","ii","iii","IV","V","vi"]}
+    ]
+}
