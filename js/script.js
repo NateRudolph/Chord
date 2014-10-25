@@ -4,12 +4,51 @@ $( document ).ready(function(){
     spanTheLyrics();
     wordClick();
 
-    $.getJSON("js/chordChart.json", function(data){
-        chordData = data;
-    });
+    transpose("Bb");
     
     
 });
+
+function transpose(key) {
+    $.getJSON("js/chordChart.json", function(data){
+        var chartIndex;
+        var chords = $("#transpose").text().split(' ');
+        
+        for(var i=0; i<data.keys.length; i++){
+            if(data.keys[i].key==key){
+                chartIndex = i;  
+            }
+        }
+        
+        for(var i=0; i<chords.length; i++){
+            if(chords[i] == "I"){
+                console.log(data.keys[chartIndex].chords[i]); 
+                continue;
+            }
+            if(chords[i] == "ii"){
+                console.log(data.keys[chartIndex].chords[i]); 
+                continue;
+            }
+            if(chords[i] == "iii"){
+                console.log(data.keys[chartIndex].chords[i]); 
+                continue;
+            }
+            if(chords[i] == "IV"){
+                console.log(data.keys[chartIndex].chords[i]); 
+                continue;
+            }
+            if(chords[i] == "V"){
+                console.log(data.keys[chartIndex].chords[i]); 
+                continue;
+            }
+            if(chords[i] == "vi"){
+                console.log(data.keys[chartIndex].chords[i]); 
+                continue;
+            }
+        }
+    });
+    
+}
 
 function wordClick(){
     $(".word").click(function(){
