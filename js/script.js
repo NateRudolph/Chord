@@ -4,7 +4,7 @@ $( document ).ready(function(){
     spanTheLyrics();
     wordClick();
 
-    transpose("Bb");
+    transpose("A#");
     
     
 });
@@ -22,30 +22,31 @@ function transpose(key) {
         
         for(var i=0; i<chords.length; i++){
             if(chords[i] == "I"){
-                console.log(data.keys[chartIndex].chords[i]); 
+                chords[i] = data.keys[chartIndex].chords[i]; 
                 continue;
             }
             if(chords[i] == "ii"){
-                console.log(data.keys[chartIndex].chords[i]); 
+                chords[i] = data.keys[chartIndex].chords[i]; 
                 continue;
             }
             if(chords[i] == "iii"){
-                console.log(data.keys[chartIndex].chords[i]); 
+                chords[i] = data.keys[chartIndex].chords[i]; 
                 continue;
             }
             if(chords[i] == "IV"){
-                console.log(data.keys[chartIndex].chords[i]); 
+                chords[i] = data.keys[chartIndex].chords[i]; 
                 continue;
             }
             if(chords[i] == "V"){
-                console.log(data.keys[chartIndex].chords[i]); 
+                chords[i] = data.keys[chartIndex].chords[i]; 
                 continue;
             }
             if(chords[i] == "vi"){
-                console.log(data.keys[chartIndex].chords[i]); 
+                chords[i] = data.keys[chartIndex].chords[i]; 
                 continue;
             }
         }
+        $("#transpose").text(chords)
     });
     
 }
