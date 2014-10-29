@@ -5,32 +5,22 @@ $( document ).ready(function(){
     wordClick();
 
     transpose("A#");
-    metronome(128);
     
-    $("#toggle").click(function(){
-        $("#bpm").toggleClass("running");
-        if($("#bpm").hasClass("running")){
-            metronome(124);
-        } else {
-           stopMetronome();    
-        }
-    });
     
 });
 
 function metronome(bpm){
+    var delay = (bpm*100/60);
+    
+    setInterval(function(){runIt()},delay*2);
+    
     var metronome = $("#metronome");
         function runIt() {
-            metronome.animate({opacity: '1'},bpm*2);
-            metronome.animate({opacity: '0.0'},bpm*2,runIt);
+            metronome.animate({opacity: '1'},100);
+            metronome.animate({opacity: '0.0'},100);
         }
-        runIt();
 
 }
-function stopMetronome(){
-    $("#metronome").animate({opacity:'0'},1000);   
-}
-
 function transpose(key) {
     $.getJSON("js/chordChart.json", function(data){
         var chartIndex;
