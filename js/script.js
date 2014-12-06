@@ -4,7 +4,7 @@ $( document ).ready(function(){
     spanTheLyrics();
     wordClick();
 
-    transpose("G#");
+    transpose("D");
     
     
 });
@@ -25,40 +25,39 @@ function transpose(key) {
     $.getJSON("js/chordChart.json", function(data){
         var chartIndex;
         var chords = $("#transpose").text().split(' ');
-        
+
         for(var i=0; i<data.keys.length; i++){
             if(data.keys[i].key==key){
                 chartIndex = i;  
             }
         }
-        
         for(var i=0; i<chords.length; i++){
-            if(chords[i] == "I"){
-                chords[i] = data.keys[chartIndex].chords[i]; 
+          if(chords[i] === "I"){
+                chords[i] = data.keys[chartIndex].chords[0]; 
                 continue;
-            }
-            if(chords[i] == "ii"){
-                chords[i] = data.keys[chartIndex].chords[i]; 
+          }
+          if(chords[i] === "ii"){
+                chords[i] = data.keys[chartIndex].chords[1]; 
                 continue;
-            }
-            if(chords[i] == "iii"){
-                chords[i] = data.keys[chartIndex].chords[i]; 
+          }
+          if(chords[i] === "iii"){
+                chords[i] = data.keys[chartIndex].chords[2]; 
                 continue;
-            }
-            if(chords[i] == "IV"){
-                chords[i] = data.keys[chartIndex].chords[i]; 
+          }
+          if(chords[i] === "IV"){
+                chords[i] = data.keys[chartIndex].chords[3]; 
                 continue;
-            }
-            if(chords[i] == "V"){
-                chords[i] = data.keys[chartIndex].chords[i]; 
+          }
+          if(chords[i] === "V"){
+                chords[i] = data.keys[chartIndex].chords[4]; 
                 continue;
-            }
-            if(chords[i] == "vi"){
-                chords[i] = data.keys[chartIndex].chords[i]; 
+          }
+          if(chords[i] === "vi"){
+                chords[i] = data.keys[chartIndex].chords[5]; 
                 continue;
             }
         }
-        $("#transpose").text(chords)
+        $("#transpose").text(chords);
     });
     
 }
