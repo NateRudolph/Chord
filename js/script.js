@@ -1,6 +1,6 @@
-var chordCounter=0;
+var chordCounter = 0;
 
-$( document ).ready(function(){
+$(document).ready(function () {
     spanTheLyrics();
     wordClick();
 
@@ -9,16 +9,18 @@ $( document ).ready(function(){
     
 });
 
-function metronome(bpm){
-    var delay = (bpm*100/60);
+function metronome(bpm) {
+    var delay = (bpm * 100 / 60);
     
-    setInterval(function(){runIt()},delay*2);
+    setInterval(function () {
+        runIt();
+    }, delay * 2);
     
     var metronome = $("#metronome");
-        function runIt() {
+    function runIt() {
             metronome.animate({opacity: '1'},100);
             metronome.animate({opacity: '0.0'},100);
-        }
+    }
 
 }
 function transpose(key) {
