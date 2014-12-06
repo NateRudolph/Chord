@@ -4,7 +4,7 @@ $( document ).ready(function(){
     spanTheLyrics();
     wordClick();
 
-    transpose("A#");
+    transpose("G#");
     
     
 });
