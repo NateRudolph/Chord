@@ -39,6 +39,7 @@
     font-family:'Monserrat',sans-serif;
     font-weight:700;
     position:absolute;
+    background:rgba(0, 0, 255, 0.38);
 }
 .twoCol {
     -webkit-column-count: 2;

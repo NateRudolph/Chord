@@ -67,7 +67,7 @@ function transpose(key) {
 function wordClick(){
     $(".word").click(function(){
         var widthOfTargetWord = ($(this).width());
-        $(this).append("<span class='chordContainer'><span id="+chordCounter+" class='chord'>Em</span></span>");
+        $(this).append("<span class='chordContainer'><span id="+chordCounter+" class='chord' draggable>Em</span></span>");
         var widthOfChord = $("#"+chordCounter).width();
         $("#"+chordCounter).css('left',(widthOfTargetWord/2*-1)+(widthOfChord/2*-1));
         chordCounter++;
