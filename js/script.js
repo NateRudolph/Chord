@@ -4,8 +4,7 @@ $( document ).ready(function(){
     spanTheLyrics();
     wordClick();
 
-    transpose("A#");
-    metronome(128);
+    transpose("G");
     
     $("#toggle").click(function(){
         $("#bpm").toggleClass("running");
