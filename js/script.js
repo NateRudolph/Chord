@@ -3,8 +3,8 @@ var chordCounter = 0;
 $(document).ready(function () {
     spanTheLyrics();
     wordClick();
-
     transpose("G");
+    metronome(128);
 
 });
 
